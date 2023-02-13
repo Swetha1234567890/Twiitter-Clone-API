@@ -1,0 +1,42 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "username": "ritu_sharma",
+    "password": "sharma98",
+    "name": "Ritu Sharma",
+    "gender": "female"
+}
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "ritu_sharma",
+    "password": "sharma98"
+}
+###
+
+GET http://localhost:3000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJpdHVfc2hhcm1hIiwiaWF0IjoxNjc2MjEzNDcyfQ.n4O3E2qMjFb-flRVUoHofqFhimIff3X8_BV-1u8ZhJU
+###
+
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJpdHVfc2hhcm1hIiwiaWF0IjoxNjc2MjEzNDcyfQ.n4O3E2qMjFb-flRVUoHofqFhimIff3X8_BV-1u8ZhJU
+###
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJpdHVfc2hhcm1hIiwiaWF0IjoxNjc2MjEzNDcyfQ.n4O3E2qMjFb-flRVUoHofqFhimIff3X8_BV-1u8ZhJU 
+
+{
+    "username": "ritu_sharma"
+}
+###
+
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJpdHVfc2hhcm1hIiwiaWF0IjoxNjc2MjEzNDcyfQ.n4O3E2qMjFb-flRVUoHofqFhimIff3X8_BV-1u8ZhJU 
+
+{
+    "username": "ritu_sharma"
+}
